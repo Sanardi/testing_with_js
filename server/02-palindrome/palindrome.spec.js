@@ -1,4 +1,4 @@
-let isPalindrome = (word) => word === word.split('').reverse().join('');
+let isPalindrome = (phrase) => phrase === phrase.split('').reverse().join('');
 
 describe('the palindrome canary spec', () => {
   it('shows the infrastructure works', () => {
@@ -14,7 +14,10 @@ describe('the palindrome canary spec', () => {
   it('true for mom mom',() => {
     expect(isPalindrome('mom mom')).toBe(true);
   });
-  it.todo('false for dad mom');
+  it('false for dad mom', () => {
+    expect (isPalindrome('dude')).toBe(false);
+  });
+
 
   it.todo('true for whitespace');
 
