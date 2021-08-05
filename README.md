@@ -1,7 +1,6 @@
-# Set up your project
+~ I cloned the repo from https://github.com/ibm-cloud-academy/ibm-cloud-garage-tdd and then used a guided tdd approach to produce the palindrome and stack functions.
 
-0. Clone this git repository
-    * In your profile > settings > SSH Keys confirm you have set up an SSH Key for Github. If not, then set up SSH access to github. [Connecting to GitHub with SSH](https://help.github.com/enterprise/2.6/user/articles/connecting-to-github-with-ssh/) 
+# Set up your project
 
 1. Install Node.js (v8.1.4 or above)
 	* Mac/Linux: Install nvm from https://github.com/creationix/nvm, then run `nvm use` from your terminal
