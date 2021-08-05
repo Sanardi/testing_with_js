@@ -1,4 +1,5 @@
-const stackFactory = () => {
+const stackFactory = (capacity) => {
+	if (capacity < 1) throw new Error('invalid capacity');
 	let elements= [];
 	return {
 	isEmpty: () => elements.length == 0,
@@ -72,5 +73,9 @@ describe('a stack', () => {
   expect(stack.pop()).toBe('2');
   expect(stack.pop()).toBe('1');
   });
-  it.todo('accepts only a positive capacity');
+  it('accepts only a positive capacity', () => {
+  expect(() => {
+  stack = stackFactory(-1);
+  }).toThrowError('invalid capacity');
+});
 });
